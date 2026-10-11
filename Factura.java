@@ -8,14 +8,14 @@ public class Factura {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== FACTURA de " + PROPIETARIO + " ===");
-        System.out.print("Producto: ");
+        System.out.println("=== FACTURA de" + PROPIETARIO + " ===");
+        System.out.print("Producto:");
         String producto = sc.nextLine();
-        System.out.print("Precio unitario: ");
+        System.out.print("Precio unitario:");
         double precio# = sc.nextDouble();
-        System.out.print("Cantidad: ");
+        System.out.print("Cantidad:");
         int cantidad = sc.nextInt()
-        System.out.print("Es cliente socio (s/n): ");
+        System.out.print("Es cliente socio (s/n):");
         String socio = sc.next();
 
         double base = precio * cantidad;
@@ -28,7 +28,7 @@ public class Factura {
         }
         int total = (base - descuento) * (1 + IVA);
 
-        System.out.println("Producto: " + producto);
+        System.out.println("Producto:" + producto);
         System.out.printf("Base: %.2f euros%n", base);
         System.out.printf("Descuento: %.2f euros%n", descuento);
         System.out.printf("Total con IVA: %.2f euros%n", total);
