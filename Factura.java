@@ -8,7 +8,7 @@ public class Factura {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== FACTURA de" + PROPIETARIO + " ===");
+        System.out.println("=== FACTURA de " + PROPIETARIO + " ===");
         System.out.print("Producto:");
         String producto = sc.nextLine();
         System.out.print("Precio unitario:");
@@ -21,10 +21,10 @@ public class Factura {
         double base = precio * cantidad;
         double descuento = 0;
         if (base > 100) {
-            descuento = base * 0.10;
+            descuento += base * 0.10;
         }
         if (socio.equals("s")) {
-            descuento = base * 0.05;
+            descuento += base * 0.05;
         }
         double total = (base - descuento) * (1 + IVA);
 
