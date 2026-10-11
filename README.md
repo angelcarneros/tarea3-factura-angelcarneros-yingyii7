@@ -13,21 +13,22 @@ Lo ejecuta la JVM, Java virtual Machine (Maquina Virtual de Java). Que es la enc
 No se ha generado porque el compilador ha encontrado errores de sintaxis en el código, después de corregir los errores ya se generará. 
 
 ## Reto 2 · Errores de compilación
-| Nº | Línea |        Mensaje de javac                     | Tipo (léxico/sintaxis/semántica) |             Corrección                  |
-|----|-------|---------------------------------------------|----------------------------------|-----------------------------------------|
-| 1  |   15  | double precio# = sc.nextDouble();           |            léxica                |double precio = sc.nextDoubl();          |
-| 2  |   17  | int cantidad = sc.next()                    |           sintáctico             |int cantidad = sc.nextInt();             |
-| 3  |   29  |double total = (base - descuento)*(1 + IVA); |           compilación            |int total = (base - descuento)*(1 + IVA);|
-| 4  |   36  |      (no se ha cerrado el scanner)          |           compilación            |sc.close();                              |
-| 5  |   24  |      descuento = base * 0.10;               |           semántico              |descuento += base * 0.10;                |
-| 6  |   27  |      descuento = base * 0.05;               |           semántico              |descuento += base * 0.05;                |
+| Nº | Línea |        Mensaje de javac                     | Tipo(léxico/sintaxis/semántica) |             Corrección                  |
+|----|-------|---------------------------------------------|---------------------------------|-----------------------------------------|
+| 1  |   15  | double precio# = sc.nextDouble();           |            léxica               |double precio = sc.nextDoubl();          |
+| 2  |   17  | int cantidad = sc.next()                    |           sintáctico            |int cantidad = sc.nextInt();             |
+| 3  |   29  |int total = (base - descuento)*(1 + IVA);    |           semántico             |double total =(base-descuento)*(1 + IVA);|
+| 4  |   36  |      (no se ha cerrado el scanner)          |           compilación           |sc.close();                              |
+| 5  |   24  |      descuento = base * 0.10;               |           lógico                |descuento += base * 0.10;                |
+| 6  |   27  |      descuento = base * 0.05;               |           lógico                |descuento += base * 0.05;                |
 Captura del programa funcionando: capturas/reto2.png
 
 ## Reto 3 · Depuración del error lógico
-| Variable | Valor esperado | Valor real |
-|----------|----------------|------------|
+| Variable  | Valor esperado| Valor real |
+|-----------|---------------|------------|
 | descuento |               |            |
 | total     |               |            |
+
 - Línea del error y explicación:
 - Corrección:
 - Mi propia prueba (producto, precio, cantidad, socio → total):
