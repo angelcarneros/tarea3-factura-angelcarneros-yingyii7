@@ -32,5 +32,7 @@ public class Factura {
         System.out.printf("Base: %.2f euros%n", base);
         System.out.printf("Descuento: %.2f euros%n", descuento);
         System.out.printf("Total con IVA: %.2f euros%n", total);
+
+        sc.close();
     }
 }
