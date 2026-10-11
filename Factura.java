@@ -9,9 +9,9 @@ public class Factura {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("=== FACTURA de " + PROPIETARIO + " ===");
-        System.out.print("Producto:");
+        System.out.print("Producto: ");
         String producto = sc.nextLine();
-        System.out.print("Precio unitario:");
+        System.out.print("Precio unitario: ");
         double precio = sc.nextDouble();
         System.out.print("Cantidad:");
         int cantidad = sc.nextInt();

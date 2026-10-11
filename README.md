@@ -26,12 +26,12 @@ Captura del programa funcionando: capturas/reto2.png
 ## Reto 3 · Depuración del error lógico
 | Variable  | Valor esperado| Valor real |
 |-----------|---------------|------------|
-| descuento |               |            |
-| total     |               |            |
+| descuento |       18      |     6      |
+| total     |     123.42    |   137.94   |
 
-- Línea del error y explicación:
-- Corrección:
-- Mi propia prueba (producto, precio, cantidad, socio → total):
+- Línea del error y explicación: (escrito sin querer corregido en la actividad 2, en la tabla anterior) Linea 24 y 27. Porque al igualarlo con =, estamos calculando un valor, pero ese valor ya no se va a dar en el proximo cálculo. Tendríamos que poner de forma que se guarde ese valor, para después sumarle el resultado de la otra operación.
+- Corrección: descuento += base * 0.10; y descuento += base * 0.05;
+- Mi propia prueba (producto, precio, cantidad, socio → total): producto: anillos, precio: 88, cantidad: 15, socio: s -> total = 1357,62 euros.
 Captura del depurador: capturas/reto3.png
 
 ## Reto 4 · Reutilización
