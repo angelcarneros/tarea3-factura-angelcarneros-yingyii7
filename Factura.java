@@ -1,4 +1,4 @@
-// palabra del dia:
+// palabra del dia: (NO HAY)
 
 import java.util.Scanner;
 
