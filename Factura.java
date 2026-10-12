@@ -1,3 +1,5 @@
+// palabra del dia:
+
 import java.util.Scanner;
 
 public class Factura {
