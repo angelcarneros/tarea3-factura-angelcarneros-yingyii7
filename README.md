@@ -47,14 +47,15 @@ Captura del depurador: capturas/reto3.png
     - Comprobación: con precio 60, cantidad 2 y socio s sigue dando 123,42 €, así que el resultado no ha cambiado.
 
 ## Reto 5 · ¿Qué lenguaje elegirías?
-- Caso A (web de la tienda):
-  Usaría un lenguaje interpretado como JavaScript que es el que ejecuta el navegador del cliente.
-  - Tipo de proyecto: es una página web y los navegadores ya traen un intérprete de JavaScript así que el cliente no tiene que instalar nada.
-  - Portabilidad: el mismo código funciona en Windows, Mac, móvil, etc. porque lo ejecuta el navegador.
-  - Coste de desarrollo: es rápido de escribir y de probar, y para una calculadora sencilla no hace falta nada más complicado.
-  - Rendimiento: no es importante porque un presupuesto son cuatro cuentas y se calculan al instante.
+- - Caso A (web de la tienda):
+    Usaria un lenguaje interpretado como JavaScript que es el que ejecuta el navegador del cliente.
+- Tipo de proyecto: es una pagina web y todos los navegadores ya traen un interprete de JavaScript asi que el cliente no tiene que instalar nada.
+- Portabilidad: el mismo codigo funciona en Windows Mac o movil porque lo ejecuta el navegador y no la CPU directamente.
+- Coste de desarrollo: es rapido de escribir y de probar y para una calculadora sencilla no hace falta nada más complicado.
+- Rendimiento: no es critico porque un presupuesto son cuatro cuentas y se calculan al instante. No es un caso de tiempo real.
+
 - Caso B (propuesta en ensamblador):
-  No lo haría. Usaría un lenguaje mixto como Java (o uno compilado), no ensamblador.
-  - Portabilidad: el ensamblador depende del procesador así que un programa hecho para un tipo de ordenador no funciona en otro. Java en cambio funciona en cualquiera que tenga la maquina virtual de Java.
-  - Coste de desarrollo: programar en ensamblador es muy lento y difícil, hay muchas más posibilidades de cometer errores y es complicado de mantener. Reescribir toda la calculadora costaría mucho tiempo.
-  - Rendimiento: la calculadora hace operaciones muy sencillas así que la mejora de velocidad no se notaría. El ensamblador solo compensa en casos muy concretos.
+  No lo haria: el ensamblador no vale para todos los ordenadores porque depende de cada CPU. Usaria un lenguaje de alto nivel como Java o uno compilado.
+  - Portabilidad: un programa en ensamblador hecho para un procesador no funciona en otro y habria que reescribirlo. Java funciona en cualquier equipo con la maquina virtual de Java.
+  - Coste de desarrollo: programar en ensamblador es lento y dificil y hay mas posibilidades de cometer errores. Ademas es complicado de mantener y reescribir toda la calculadora costaria mucho tiempo.
+  - Rendimiento: la calculadora hace operaciones muy sencillas y la mejora de velocidad no se notaria. El ensamblador solo compensa para ajustes puntuales en casos muy concretos y no para reescribir un programa entero.
