@@ -48,4 +48,13 @@ Captura del depurador: capturas/reto3.png
 
 ## Reto 5 · ¿Qué lenguaje elegirías?
 - Caso A (web de la tienda):
+  Usaría un lenguaje interpretado como JavaScript que es el que ejecuta el navegador del cliente.
+  - Tipo de proyecto: es una página web y los navegadores ya traen un intérprete de JavaScript así que el cliente no tiene que instalar nada.
+  - Portabilidad: el mismo código funciona en Windows, Mac, móvil, etc. porque lo ejecuta el navegador.
+  - Coste de desarrollo: es rápido de escribir y de probar, y para una calculadora sencilla no hace falta nada más complicado.
+  - Rendimiento: no es importante porque un presupuesto son cuatro cuentas y se calculan al instante.
 - Caso B (propuesta en ensamblador):
+  No lo haría. Usaría un lenguaje mixto como Java (o uno compilado), no ensamblador.
+  - Portabilidad: el ensamblador depende del procesador así que un programa hecho para un tipo de ordenador no funciona en otro. Java en cambio funciona en cualquiera que tenga la maquina virtual de Java.
+  - Coste de desarrollo: programar en ensamblador es muy lento y difícil, hay muchas más posibilidades de cometer errores y es complicado de mantener. Reescribir toda la calculadora costaría mucho tiempo.
+  - Rendimiento: la calculadora hace operaciones muy sencillas así que la mejora de velocidad no se notaría. El ensamblador solo compensa en casos muy concretos.
