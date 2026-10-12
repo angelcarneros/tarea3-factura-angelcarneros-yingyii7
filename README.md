@@ -36,7 +36,15 @@ Captura del depurador: capturas/reto3.png
 
 ## Reto 4 · Reutilización
 - Métodos creados y para qué sirve cada uno:
+    - calcularDescuento(double base, boolean socio): calcula cuánto dinero se descuenta. Da un 10 % si la compra pasa de 100 € y un 5 % más si el cliente es socio.
+    - aplicarIVA(double importe): coge un precio sin IVA y devuelve ese precio con el 21 % de IVA sumado.
+    - pedirDecimal(Scanner sc, String mensaje): escribe una pregunta en pantalla y devuelve el número decimal que escribe el usuario. Así no hay que repetir print + nextDouble.
 - ¿Qué ventaja tiene frente al código anterior?
+    - Antes todo el cálculo estaba mezclado dentro de main. Ahora cada tarea tiene su propio método con un nombre claro, y el código se lee mucho mejor.
+    - Si hay que usar el descuento o el IVA otra vez, solo se llama al método en vez de copiar y pegar el código.
+    - Si cambia una regla (por ejemplo, el porcentaje del descuento), se cambia en un solo sitio.
+    - Es más fácil encontrar errores, porque se puede revisar cada método por separado.
+    - Comprobación: con precio 60, cantidad 2 y socio s sigue dando 123,42 €, así que el resultado no ha cambiado.
 
 ## Reto 5 · ¿Qué lenguaje elegirías?
 - Caso A (web de la tienda):
