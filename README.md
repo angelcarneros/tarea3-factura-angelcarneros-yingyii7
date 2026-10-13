@@ -48,7 +48,7 @@
   - Es más fácil encontrar errores, porque se puede revisar cada método por separado.
   - **Comprobación:** con precio 60, cantidad 2 y socio s sigue dando **123,42 €**, así que el resultado no ha cambiado.
 
-## Reto 5 · ¿Qué lenguaje elegirías?
+## Reto 5 · ¿Qué lenguaje elegirías? 
 - **Caso A (web de la tienda):**
   Usaria un lenguaje **interpretado** como **JavaScript** que es el que ejecuta el navegador del cliente.
   - **Tipo de proyecto:** es una pagina web y todos los navegadores ya traen un interprete de JavaScript asi que el cliente no tiene que instalar nada.
@@ -60,4 +60,4 @@
   **No lo haria:** el ensamblador no vale para todos los ordenadores porque depende de cada CPU. Usaria un lenguaje de alto nivel como **Java** o uno compilado.
   - **Portabilidad:** un programa en ensamblador hecho para un procesador no funciona en otro y habria que reescribirlo. Java funciona en cualquier equipo con la maquina virtual de Java.
   - **Coste de desarrollo:** programar en ensamblador es lento y dificil y hay mas posibilidades de cometer errores. Ademas es complicado de mantener y reescribir toda la calculadora costaria mucho tiempo.
-  - **Rendimiento:** la calculadora hace operaciones muy sencillas y la mejora de velocidad no se notaria. El ensamblador solo compensa para ajustes puntuales en casos muy concretos y no para reescribir un programa entero.
+  - **Rendimiento:** la calculadora hace operaciones muy sencillas y la mejora de velocidad no se notaria. El ensamblador solo compensa para ajustes puntuales en casos muy concretos y no para reescribir un programa entero. 
